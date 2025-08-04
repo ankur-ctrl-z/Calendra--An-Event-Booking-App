@@ -56,4 +56,4 @@ export function formatEventDescription(durationInMinutes: number) : string {
     // Format a Date object into a readable date + time string
     export function formatDateTime(date: Date) {
       return dateTimeFormatter.format(date)
-    }
+    } 

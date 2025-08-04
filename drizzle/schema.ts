@@ -2,7 +2,7 @@ import { DAYS_OF_WEEK_IN_ORDER } from "@/constants";
 import { relations } from "drizzle-orm";
 import { boolean, index, integer, pgEnum, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
 
-
+ 
 // Define a reusable `createdAt` timestamp column with default value set to now
 const createdAt = timestamp("createdAt").notNull().defaultNow()
 

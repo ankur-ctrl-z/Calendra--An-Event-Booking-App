@@ -7,7 +7,7 @@ import { auth } from "@clerk/nextjs/server"
 export default async function EditEventPage({
   params,// Extracting the eventId from the URL params
 }: {
-  params: Promise<{ eventId: string }>
+  params: { eventId: string }
 }) {
     // Get the current authenticated user and handle the redirect if the user is not logged in
   const { userId, redirectToSignIn } = await auth()
