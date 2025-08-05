@@ -1,7 +1,7 @@
 import { DAYS_OF_WEEK_IN_ORDER } from "@/constants";
 import { timeToFloat } from "@/lib/utils";
 import { z } from "zod";
-
+ 
 export const scheduleFormSchema = z.object({
     timezone: z.string().min(1, "Required"), // The timezone must be a string and cannot be empty
        availabilities: z // The 'availabilities' field is an array

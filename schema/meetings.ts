@@ -5,7 +5,7 @@ import { z } from "zod"
 const meetingSchemaBase = z.object({
   // 'startTime' must be a valid date and can't be in the past
   startTime: z.date().min(new Date()),
-
+ 
   // 'guestEmail' must be a valid email and is required
   guestEmail: z.string().email().min(1, "Required"),
 
